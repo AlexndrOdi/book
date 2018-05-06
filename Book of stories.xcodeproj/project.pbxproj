@@ -14,6 +14,8 @@
 		95781723209E595500AB621F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95781721209E595500AB621F /* LaunchScreen.storyboard */; };
 		9578172E209E595500AB621F /* Book_of_storiesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9578172D209E595500AB621F /* Book_of_storiesTests.swift */; };
 		95781739209E595500AB621F /* Book_of_storiesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95781738209E595500AB621F /* Book_of_storiesUITests.swift */; };
+		9578174C209E744C00AB621F /* DataCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9578174B209E744C00AB621F /* DataCollectionViewCell.swift */; };
+		9578174E209E756900AB621F /* CalendarVars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9578174D209E756900AB621F /* CalendarVars.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		95781734209E595500AB621F /* Book of storiesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Book of storiesUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		95781738209E595500AB621F /* Book_of_storiesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book_of_storiesUITests.swift; sourceTree = "<group>"; };
 		9578173A209E595500AB621F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9578174B209E744C00AB621F /* DataCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataCollectionViewCell.swift; sourceTree = "<group>"; };
+		9578174D209E756900AB621F /* CalendarVars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarVars.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,8 @@
 		95781717209E595200AB621F /* Book of stories */ = {
 			isa = PBXGroup;
 			children = (
+				9578174D209E756900AB621F /* CalendarVars.swift */,
+				9578174B209E744C00AB621F /* DataCollectionViewCell.swift */,
 				95781718209E595300AB621F /* AppDelegate.swift */,
 				9578171A209E595300AB621F /* ViewController.swift */,
 				9578171C209E595300AB621F /* Main.storyboard */,
@@ -257,7 +263,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9578171B209E595300AB621F /* ViewController.swift in Sources */,
+				9578174C209E744C00AB621F /* DataCollectionViewCell.swift in Sources */,
 				95781719209E595300AB621F /* AppDelegate.swift in Sources */,
+				9578174E209E756900AB621F /* CalendarVars.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,6 +441,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M48S3Y65RF;
 				INFOPLIST_FILE = "Book of stories/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -440,7 +449,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mywork.Book-of-stories";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -451,6 +460,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M48S3Y65RF;
 				INFOPLIST_FILE = "Book of stories/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -458,7 +468,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mywork.Book-of-stories";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
