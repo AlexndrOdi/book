@@ -13,4 +13,5 @@ class DataCollectionViewCell: UICollectionViewCell {
     //MARK: Properties
     @IBOutlet weak var dateLabel: UILabel!
     
+    
 }

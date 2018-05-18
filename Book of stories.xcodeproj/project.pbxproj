@@ -16,6 +16,11 @@
 		95781739209E595500AB621F /* Book_of_storiesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95781738209E595500AB621F /* Book_of_storiesUITests.swift */; };
 		9578174C209E744C00AB621F /* DataCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9578174B209E744C00AB621F /* DataCollectionViewCell.swift */; };
 		9578174E209E756900AB621F /* CalendarVars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9578174D209E756900AB621F /* CalendarVars.swift */; };
+		9586FBDD20A3106D00D569CF /* Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9586FBDC20A3106D00D569CF /* Animations.swift */; };
+		9586FBDF20A32B8900D569CF /* PickedDateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9586FBDE20A32B8900D569CF /* PickedDateViewController.swift */; };
+		95C1BC8E20A49A5F00434A26 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C1BC8D20A49A5F00434A26 /* ImageCollectionViewCell.swift */; };
+		95C1BC9220A566FF00434A26 /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C1BC9120A566FF00434A26 /* Story.swift */; };
+		95C1BC9820A578D800434A26 /* ImagePickedDayCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C1BC9720A578D800434A26 /* ImagePickedDayCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,11 @@
 		9578173A209E595500AB621F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9578174B209E744C00AB621F /* DataCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataCollectionViewCell.swift; sourceTree = "<group>"; };
 		9578174D209E756900AB621F /* CalendarVars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarVars.swift; sourceTree = "<group>"; };
+		9586FBDC20A3106D00D569CF /* Animations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animations.swift; sourceTree = "<group>"; };
+		9586FBDE20A32B8900D569CF /* PickedDateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickedDateViewController.swift; sourceTree = "<group>"; };
+		95C1BC8D20A49A5F00434A26 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		95C1BC9120A566FF00434A26 /* Story.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
+		95C1BC9720A578D800434A26 /* ImagePickedDayCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickedDayCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +111,13 @@
 		95781717209E595200AB621F /* Book of stories */ = {
 			isa = PBXGroup;
 			children = (
-				9578174D209E756900AB621F /* CalendarVars.swift */,
-				9578174B209E744C00AB621F /* DataCollectionViewCell.swift */,
+				95C1BC9520A56A6C00434A26 /* models */,
+				95C1BC9420A56A4300434A26 /* collections */,
 				95781718209E595300AB621F /* AppDelegate.swift */,
-				9578171A209E595300AB621F /* ViewController.swift */,
+				9586FBDC20A3106D00D569CF /* Animations.swift */,
+				9578174D209E756900AB621F /* CalendarVars.swift */,
 				9578171C209E595300AB621F /* Main.storyboard */,
+				95C1BC9620A56A8500434A26 /* controllers */,
 				9578171F209E595500AB621F /* Assets.xcassets */,
 				95781721209E595500AB621F /* LaunchScreen.storyboard */,
 				95781724209E595500AB621F /* Info.plist */,
@@ -129,6 +141,33 @@
 				9578173A209E595500AB621F /* Info.plist */,
 			);
 			path = "Book of storiesUITests";
+			sourceTree = "<group>";
+		};
+		95C1BC9420A56A4300434A26 /* collections */ = {
+			isa = PBXGroup;
+			children = (
+				95C1BC8D20A49A5F00434A26 /* ImageCollectionViewCell.swift */,
+				9578174B209E744C00AB621F /* DataCollectionViewCell.swift */,
+				95C1BC9720A578D800434A26 /* ImagePickedDayCollectionViewCell.swift */,
+			);
+			path = collections;
+			sourceTree = "<group>";
+		};
+		95C1BC9520A56A6C00434A26 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				95C1BC9120A566FF00434A26 /* Story.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		95C1BC9620A56A8500434A26 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9578171A209E595300AB621F /* ViewController.swift */,
+				9586FBDE20A32B8900D569CF /* PickedDateViewController.swift */,
+			);
+			path = controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,9 +302,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				9578171B209E595300AB621F /* ViewController.swift in Sources */,
+				9586FBDD20A3106D00D569CF /* Animations.swift in Sources */,
+				95C1BC9820A578D800434A26 /* ImagePickedDayCollectionViewCell.swift in Sources */,
+				9586FBDF20A32B8900D569CF /* PickedDateViewController.swift in Sources */,
+				95C1BC8E20A49A5F00434A26 /* ImageCollectionViewCell.swift in Sources */,
 				9578174C209E744C00AB621F /* DataCollectionViewCell.swift in Sources */,
 				95781719209E595300AB621F /* AppDelegate.swift in Sources */,
 				9578174E209E756900AB621F /* CalendarVars.swift in Sources */,
+				95C1BC9220A566FF00434A26 /* Story.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
